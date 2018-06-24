@@ -1,0 +1,17 @@
+.large-hero {
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.large-hero__text-content {
+    color: #fff;
+    text-transform: uppercase;
+
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    margin-bottom: 40px;
+}

@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html{{ html_attributes }}>
+  <head>
+    <meta name="theme-color" content="#4786ff"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <head-placeholder token="{{ placeholder_token }}">
+    <title>{{ head_title|safe_join(' | ') }}</title>
+    <css-placeholder token="{{ placeholder_token }}">
+    <js-placeholder token="{{ placeholder_token }}">
+      <link rel="manifest" href="http://localhost:8888/clarity/manifest.json">
+      </head>
+      </div>
+  <body{{ attributes }}>
+    {#
+      Keyboard navigation/accessibility link to main content section in
+      page.html.twig.
+    #}
+    <a href="#main-content" class="visually-hidden focusable">
+      {{ 'Skip to main content'|t }}
+    </a>
+    {{ page_top }}
+    {{ page }}
+    {{ page_bottom }}
+    <js-bottom-placeholder token="{{ placeholder_token }}">
+
+  </body>
+</html>

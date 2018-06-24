@@ -1,0 +1,15 @@
+base:
+  version: VERSION
+  css:
+    theme:
+      css/styles.css: {}
+  js:
+    js/clarity.js: {}
+  dependencies:
+    - core/jquery
+
+font-awesome:
+  version: 4.3.0
+  css:
+    theme:
+      libraries/font-awesome/css/font-awesome.min.css: {}

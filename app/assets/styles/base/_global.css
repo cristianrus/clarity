@@ -1,0 +1,126 @@
+/*COLORS
+green: #41ccd2;
+blue: #4786ff;
+violet: #675ff2
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica,
+    "Segoe UI", Arial, sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #63768d;
+    padding: 30px;
+}
+
+.loader,
+.loader:after {
+    border-radius: 50%;
+    width: 10em;
+    height: 10em;
+}
+
+.loader {
+    margin: 60px auto;
+    font-size: 10px;
+    position: relative;
+    text-indent: -9999em;
+    border-top: 1.1em solid rgba(255, 255, 255, 0.2);
+    border-right: 1.1em solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1.1em solid rgba(255, 255, 255, 0.2);
+    border-left: 1.1em solid #ffffff;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-animation: load8 1s infinite linear;
+    -moz-animation: load8 1s infinite linear;
+    animation: load8 1s infinite linear;
+}
+@-webkit-keyframes load8 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes load8 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+#loadingDiv {
+    position:absolute;;
+    top:0;
+    left:0;
+    width:100%;
+    height:100vh;
+    background-color:#fff;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #4e5660;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #4786ff;
+    border: 1px solid #4786ff;
+    border-radius: 50px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #4786ff;
+    border: 1px solid #4786ff;
+    border-radius: 50px;
+}
+
+.header {
+    height: 91vh;
+    background-image: linear-gradient(
+            to right bottom,
+            rgba(65, 204, 210, 0.5),
+            rgba(71, 134, 255, 0.5),
+            rgba(103, 95, 242, 0.5)),
+    url(../../img/hero-compressor.jpg);
+    background-size: cover;
+    background-position: top;
+
+    clip-path: polygon(0 0, 100% 0, 100% 87vh, 0 100%);
+    position: relative;
+}
+
+#block-clarity-branding {
+    position: absolute;
+    top: 4%;
+    left: 3%;
+}
+
+#block-clarity-branding a img {
+    height: 30px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
