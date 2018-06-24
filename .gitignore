@@ -28,6 +28,7 @@ nbproject
 _notes
 dwsync.xml
 !/package.json
+/package-lock.json
 /packagejson.txt
 /app/natours/
 /app/nexter/
