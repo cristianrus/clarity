@@ -11,7 +11,7 @@ gulp.task('default', function () {
 });
 
 gulp.task('html', function () {
-   console.log("Imagine something useful being done to your HTML here");
+   console.log("HTML was modified");
 });
 
 gulp.task('styles', function() {
