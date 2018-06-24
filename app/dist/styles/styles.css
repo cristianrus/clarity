@@ -560,13 +560,13 @@ body {
             from(rgba(65, 204, 210, 0.5)),
             color-stop(rgba(71, 134, 255, 0.5)),
             to(rgba(103, 95, 242, 0.5))),
-    url(../../img/hero-compressor.jpg);
+    url(../../assets/images/hero-compressor.jpg);
     background-image: linear-gradient(
             to right bottom,
             rgba(65, 204, 210, 0.5),
             rgba(71, 134, 255, 0.5),
             rgba(103, 95, 242, 0.5)),
-    url(../../img/hero-compressor.jpg);
+    url(../../assets/images/hero-compressor.jpg);
     background-size: cover;
     background-position: top;
 
@@ -737,18 +737,27 @@ img {
         transform: translate(0);    }
 }
 
-.mybtn:link,
-.mybtn:visited {
+.mybtn {
     text-transform: uppercase;
     text-decoration: none;
-    padding: 11px 35px;
+    padding: 0.6875rem 2.1875rem;
     -webkit-box-shadow: 4px 4px 0 0 rgba(0,0,0,.2);
             box-shadow: 4px 4px 0 0 rgba(0,0,0,.2);
     border-radius: 17px;
     display: inline-block;
+}
+
+.mybtn--blue {
+    background-color:#4786ff;
+    color: white;
+     }
+
+.mybtn:link,
+.mybtn:visited {
     -webkit-transition: all .2s;
     transition: all .2s;
     position: relative;
+    font-size: 0.8rem;
 }
 
 .mybtn:hover {
@@ -801,8 +810,9 @@ img {
             animation-fill-mode: backwards;
 }
 
-.mybtn__getintouch {
-    -webkit-box-shadow: 1px 1px 0 0 rgba(255,255,255,.1) !important;
-            box-shadow: 1px 1px 0 0 rgba(255,255,255,.1) !important;
+.getintouch {
     float: right;
+    padding: .75rem 1.2rem;
+    color: white;
+    text-decoration: none;
 }

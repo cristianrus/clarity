@@ -1,13 +1,23 @@
-.mybtn:link,
-.mybtn:visited {
+.mybtn {
     text-transform: uppercase;
     text-decoration: none;
-    padding: 11px 35px;
+    padding: 0.6875rem 2.1875rem;
     box-shadow: 4px 4px 0 0 rgba(0,0,0,.2);
     border-radius: 17px;
     display: inline-block;
+
+
+    &--blue {
+    background-color:#4786ff;
+    color: white;
+     }
+}
+
+.mybtn:link,
+.mybtn:visited {
     transition: all .2s;
     position: relative;
+    font-size: 0.8rem;
 }
 
 .mybtn:hover {
@@ -62,8 +72,9 @@
     animation: moveInBottom .5s ease-out 1.75s;
     animation-fill-mode: backwards;
 }
-
-.mybtn__getintouch {
-    box-shadow: 1px 1px 0 0 rgba(255,255,255,.1) !important;
+.getintouch {
     float: right;
+    padding: .75rem 1.2rem;
+    color: white;
+    text-decoration: none;
 }
